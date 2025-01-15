@@ -22,6 +22,7 @@ public class BBW {
             if (zeichen.matches("[0-9]")) {
                 buchstabensumme += Integer.parseInt(zeichen);
             }
+
             if (zeichen.equals("ä")) {
                 buchstabensumme += 27;
             }
