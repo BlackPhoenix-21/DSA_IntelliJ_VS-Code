@@ -9,8 +9,8 @@ public class taschenrechner {
         String aus;
         int ergebnis;
 
-        aus = Eingabe(
-                "Bitte im folgenden Format eingeben: Zahl1 Zahl2 Zahl3 RechenOp1 RechenOp2 oder Zahl1 Zahl2 RechenOp1 Zahl3 RechenOp2");
+        aus = Eingabe("Bitte im folgenden Format eingeben:" +
+                " Zahl1 Zahl2 Zahl3 RechenOp1 RechenOp2 oder Zahl1 Zahl2 RechenOp1 Zahl3 RechenOp2");
 
         String verarbeitung[] = aus.split(" ");
 
