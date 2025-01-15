@@ -3,6 +3,7 @@ public class test {
 
         System.out.println("Hello");
         System.out.println("enens du dawg");
+        System.out.println("kaka pupu");
 
     }
 }
