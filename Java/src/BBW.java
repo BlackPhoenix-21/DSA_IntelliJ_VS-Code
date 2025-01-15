@@ -10,7 +10,6 @@ public class BBW {
         String eingabe = in.readLine();
 
         eingabe = eingabe.toLowerCase();
-
         int buchstabensumme = 0;
 
         for (int i = 0; i < eingabe.length(); i++) {
