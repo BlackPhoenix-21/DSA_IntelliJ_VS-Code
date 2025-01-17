@@ -32,7 +32,7 @@ public class DiceArray {
             }
         }
 
-        int[] sortiert = ArrySort(counter);
+        int[] sortiert = ArraySort(counter);
 
         for (int i = 0; i < counter.length; i++) {
             System.out.print(counter[i] + ", ");
@@ -45,7 +45,7 @@ public class DiceArray {
         }
     }
 
-    private static int[] ArrySort(int[] zahlen) {
+    private static int[] ArraySort(int[] zahlen) {
 
         int[] numbers = new int[zahlen.length];
 
