@@ -36,12 +36,13 @@ public class DiceArray {
         int[] B = new int[counter.length];
         int[] sortiert = ArraySort(counter);
         int[] sortiert2 = ArraySort2(counter);
+        int[] sortiert3 = counter.clone();
 
         System.out.println(Arrays.toString(counter));
         System.out.println(Arrays.toString(sortiert));
         System.out.println(Arrays.toString(sortiert2));
-        Mergsort(counter, B, counter.length);
-        System.out.println(Arrays.toString(counter));
+        Mergsort(sortiert3, B, sortiert3.length);
+        System.out.println(Arrays.toString(sortiert3));
     }
 
     private static int[] ArraySort(int[] zahlen) {
