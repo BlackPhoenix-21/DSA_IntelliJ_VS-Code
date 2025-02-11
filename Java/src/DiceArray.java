@@ -6,8 +6,8 @@ public class DiceArray {
 
         Random rd = new Random();
 
-        final int amount = 1000;
-        final int dice = 1000;
+        final int amount = 100;
+        final int dice = 6;
 
         int[] counter = new int[dice];
 
