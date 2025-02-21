@@ -52,6 +52,5 @@ public class FibonacciFolge {
             prevprevx = prex;
             prex = newx;
         }
-
     }
 }
