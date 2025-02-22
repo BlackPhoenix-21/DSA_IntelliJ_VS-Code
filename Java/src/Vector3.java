@@ -43,7 +43,7 @@ public record Vector3(float x, float y, float z) implements Comparable<Vector3> 
     }
 
     public float dot(Vector3 otherVector3) {
-        return 0;
+        return x * otherVector3.x + y * otherVector3.y + z * otherVector3.z;
     }
 
     public boolean equals(Vector3 otherVector3) {
