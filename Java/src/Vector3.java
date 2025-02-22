@@ -35,7 +35,7 @@ public record Vector3(float x, float y, float z) implements Comparable<Vector3> 
     }
 
     public Vector3 divide(Vector3 otherVector3) {
-        return new Vector3(x / otherVector3.x, y / f.y, z / otherVector3.z);
+        return new Vector3(x / otherVector3.x, y / otherVector3.y, z / otherVector3.z);
     }
 
     public Vector3 divide(float scalar) {
