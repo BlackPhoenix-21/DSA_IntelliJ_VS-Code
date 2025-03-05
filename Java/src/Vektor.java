@@ -9,5 +9,11 @@ public class Vektor {
 
         Vector2 c = a.add(b);
         System.out.println(c);
+
+        Vector3 d = new Vector3(3, 0, 0);
+        Vector3 e = new Vector3(0, 4, 0);
+
+        System.out.println(d.compareTo(e));
+        System.out.println(e.compareTo(d));
     }
 }
