@@ -1,11 +1,11 @@
 public record Vector3(float x, float y, float z) implements Comparable<Vector3> {
     public int compareTo(Vector3 otherVector3) {
-        float lenght = getLenght();
-        float otherlenght = otherVector3.getLenght();
-        if (lenght == otherlenght) {
+        float length = getLength();
+        float otherLength = otherVector3.getLength();
+        if (length == otherLength) {
             return 0;
         } else {
-            if (lenght < otherlenght) {
+            if (length < otherLength) {
                 return -1;
             } else {
                 return 1;
@@ -13,7 +13,7 @@ public record Vector3(float x, float y, float z) implements Comparable<Vector3> 
         }
     }
 
-    public float getLenght() {
+    public float getLength() {
         return (float) Math.sqrt(x * x + y * y + z * z);
     }
 
@@ -31,7 +31,7 @@ public record Vector3(float x, float y, float z) implements Comparable<Vector3> 
     }
 
     public float distance(Vector3 otherVector3) {
-        return this.subtract(otherVector3).getLenght();
+        return this.subtract(otherVector3).getLength();
     }
 
     public Vector3 divide(Vector3 otherVector3) {
@@ -54,8 +54,8 @@ public record Vector3(float x, float y, float z) implements Comparable<Vector3> 
         }
     }
 
-    public float lenghtSquard() {
-        return (new Vector3(x * x, y * y, z * z)).getLenght();
+    public float lengthSquared() {
+        return (new Vector3(x * x, y * y, z * z)).getLength();
     }
 
     public Vector3 max(Vector3 otherVector3) {
@@ -115,6 +115,6 @@ public record Vector3(float x, float y, float z) implements Comparable<Vector3> 
     }
 
     public Vector3 normalize() {
-        return this.divide(this.getLenght());
+        return this.divide(this.getLength());
     }
 }
