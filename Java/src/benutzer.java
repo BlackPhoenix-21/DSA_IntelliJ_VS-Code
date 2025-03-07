@@ -1,3 +1,4 @@
+
 public class Benutzer {
 
     private record User(int uid, String kennung, String passwort, String fullname) {

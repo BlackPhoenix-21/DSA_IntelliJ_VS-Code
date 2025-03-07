@@ -1,3 +1,4 @@
+
 public record Vector3(float x, float y, float z) implements Comparable<Vector3> {
     public int compareTo(Vector3 otherVector3) {
         float length = getLength();

@@ -1,3 +1,4 @@
+
 import java.io.Console;
 
 public class Zeichen_L {
