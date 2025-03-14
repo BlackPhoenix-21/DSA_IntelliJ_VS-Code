@@ -1,5 +1,5 @@
-
 public record Vector3(float x, float y, float z) implements Comparable<Vector3> {
+
     public int compareTo(Vector3 otherVector3) {
         float length = getLength();
         float otherLength = otherVector3.getLength();
@@ -12,6 +12,18 @@ public record Vector3(float x, float y, float z) implements Comparable<Vector3> 
                 return 1;
             }
         }
+    }
+
+    public float getX() {
+        return this.x;
+    }
+
+    public float getY() {
+        return this.y;
+    }
+
+    public float getZ() {
+        return this.z;
     }
 
     public float getLength() {
